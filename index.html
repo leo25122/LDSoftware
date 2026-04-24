@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leonardo Dogariu | Software Ecosystem</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body class="app-page">
+
+  <div id="hub-canvas-container"></div>
+
+  <nav>
+    <a href="index.html" class="brand">L.D. Software</a>
+    <div class="nav-links">
+    </div>
+  </nav>
+
+  <div class="fixed-app-header">
+    <div class="category-label">Software Ecosystem</div>
+    <h1 style="font-size: clamp(2.5rem, 6vw, 3.5rem);">My Projects</h1>
+    <div class="spin-hint">Use the mouse wheel or arrows to rotate</div>
+  </div>
+
+  <div class="carousel-nav">
+    <div class="nav-arrow left-arrow" onclick="rotateCarousel(1)">&#10094;</div>
+    <div class="nav-arrow right-arrow" onclick="rotateCarousel(-1)">&#10095;</div>
+  </div>
+
+  <div class="scene-3d">
+    <div class="carousel-3d">
+      
+      <div class="panel-3d">
+        <span class="category" style="display: block; margin-bottom: 8px; color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase;">Industrial Automation</span>
+        <h2>Forge</h2>
+        <p>Advanced software for automation engineering. Client/Server architecture, I/O Marshalling, and integrated TIA Portal export for distributed teams.</p>
+        <p style="font-size: 0.8rem; color: #666; font-weight: 600; margin-bottom: 20px;">WPF / .NET 8 / SignalR</p>
+        <a href="forge.html" class="btn btn-primary" style="font-size: 0.9rem; padding: 12px 24px;">Discover Forge</a>
+      </div>
+
+      <div class="panel-3d">
+        <span class="category" style="display: block; margin-bottom: 8px; color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase;">Signal Analysis</span>
+        <h2>PlcTraceViewer</h2>
+        <p>Professional analysis tool for Siemens traces. Synchronized multi-signal graphs and multi-window architecture. 100% Standalone.</p>
+        <p style="font-size: 0.8rem; color: #666; font-weight: 600; margin-bottom: 20px;">C# / Standalone</p>
+        <a href="plctraceviewer.html" class="btn btn-primary" style="font-size: 0.9rem; padding: 12px 24px;">Discover Trace Viewer</a>
+      </div>
+
+      <div class="panel-3d">
+        <span class="category" style="display: block; margin-bottom: 8px; color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase;">Productivity</span>
+        <h2>Visual Translate</h2>
+        <p>Real-time visual translation system. Leverages Tesseract OCR engine for instant overlay translations, completely offline.</p>
+        <p style="font-size: 0.8rem; color: #666; font-weight: 600; margin-bottom: 20px;">Python / Tesseract</p>
+        <a href="visualtranslate.html" class="btn btn-primary" style="font-size: 0.9rem; padding: 12px 24px;">Discover Visual Translate</a>
+      </div>
+
+      <div class="panel-3d">
+        <span class="category" style="display: block; margin-bottom: 8px; color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase;">Finance & Tracking</span>
+        <h2>Expense Manager</h2>
+        <p>A cross-platform personal finance application built with Flutter and Firebase. Track expenses and sync data instantly in the cloud.</p>
+        <p style="font-size: 0.8rem; color: #666; font-weight: 600; margin-bottom: 20px;">Flutter / Firebase / Web App</p>
+        <a href="expensemanager.html" class="btn btn-primary" style="font-size: 0.9rem; padding: 12px 24px;">Discover Expense Manager</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer style="position: fixed; bottom: 0; left: 0; width: 100%; padding: 20px; z-index: 50; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); border: none;">
+    <div class="footer-inner" style="flex-direction: row; justify-content: space-between; align-items: center;">
+      <div class="contacts" style="gap: 20px;">
+        <a href="https://github.com/leo25122" target="_blank">GitHub</a>
+        <a href="mailto:leonardodogariu2512@gmail.com">Technical Support</a>
+        <a href="https://www.linkedin.com/in/leonardo-dogariu" target="_blank">LinkedIn</a>
+      </div>
+      <div class="copyright" style="color: #666;">
+        &copy; <span id="year"></span> Leonardo Dogariu.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

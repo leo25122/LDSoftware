@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Translate | Leonardo Dogariu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body class="app-page">
+
+  <div id="canvas-container"></div>
+
+  <nav>
+    <a href="index.html" class="brand">L.D. Software</a>
+    <div class="nav-links">
+      <a href="index.html" class="btn btn-outline">Back to Projects</a>
+    </div>
+  </nav>
+
+  <div class="fixed-app-header">
+    <div class="category-label">Productivity</div>
+    <h1>Visual Translate</h1>
+    <div class="spin-hint">Use the mouse wheel or arrows to rotate</div>
+  </div>
+
+  <div class="carousel-nav">
+    <div class="nav-arrow left-arrow" onclick="rotateCarousel(1)">&#10094;</div>
+    <div class="nav-arrow right-arrow" onclick="rotateCarousel(-1)">&#10095;</div>
+  </div>
+
+  <div class="scene-3d">
+    <div class="carousel-3d">
+      
+      <div class="panel-3d">
+        <h2>Tesseract OCR Technology</h2>
+        <p>Instantly translate any visible element on your monitor, eliminating the need to copy-paste text or switch between applications.</p>
+        <ul>
+          <li><strong>Recognition Engine:</strong> Leverages the reliability of the Tesseract OCR w64 engine for extremely accurate character reading.</li>
+          <li><strong>Dynamic Overlay:</strong> Define the capture area with a simple mouse drag, and the system will apply the overlay translation directly on software, games, or locked interfaces.</li>
+        </ul>
+      </div>
+
+      <div class="panel-3d">
+        <h2>100% Offline Translation</h2>
+        <p>Download the architecture once, use it anywhere, ensuring total privacy for your on-screen data.</p>
+        <ul>
+          <li><strong>Argos Translate Engine:</strong> Access a vast catalog of language packages locally downloaded for on-device processing.</li>
+          <li><strong>Absolute Privacy:</strong> No text or image is ever sent to external Cloud APIs. All neural processing happens directly on your machine's CPU.</li>
+        </ul>
+      </div>
+
+      <div class="panel-3d">
+        <h2>Standalone Execution</h2>
+        <p>Architecture designed to be lightweight and non-invasive.</p>
+        <ul>
+          <li><strong>Modular Installation:</strong> Requires the initial installation of Tesseract (Windows 64-bit), then integrates seamlessly with the system.</li>
+          <li><strong>Portable Executable:</strong> After the initial setup, the entire Python application can be moved and run as a single independent file.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="fixed-download-bar">
+    <a href="https://github.com/leo25122/Screen-Translator-App/releases/download/v2.0-beta/VisualTranslate-2.0-Setup.exe" class="btn btn-primary" style="font-size: 1.1rem; padding: 18px 48px;">Download Visual Translate</a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

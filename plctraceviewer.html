@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlcTraceViewer | Leonardo Dogariu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body class="app-page">
+
+  <div id="canvas-container"></div>
+
+  <nav>
+    <a href="index.html" class="brand">L.D. Software</a>
+    <div class="nav-links">
+      <a href="index.html" class="btn btn-outline">Back to Projects</a>
+    </div>
+  </nav>
+
+  <div class="fixed-app-header">
+    <div class="category-label">Signal Analysis</div>
+    <h1>PlcTraceViewer</h1>
+    <div class="spin-hint">Use the mouse wheel or arrows to rotate</div>
+  </div>
+
+  <div class="carousel-nav">
+    <div class="nav-arrow left-arrow" onclick="rotateCarousel(1)">&#10094;</div>
+    <div class="nav-arrow right-arrow" onclick="rotateCarousel(-1)">&#10095;</div>
+  </div>
+
+  <div class="scene-3d">
+    <div class="carousel-3d">
+      
+      <div class="panel-3d">
+        <h2>Smooth Multi-Signal Analysis</h2>
+        <p>Visualize and analyze complex graphs exported from TIA Portal with unprecedented smoothness, without lag or performance drops.</p>
+        <ul>
+          <li><strong>Precise Zoom & Pan:</strong> Microscopic temporal exploration perfectly synchronized across all reading axes.</li>
+          <li><strong>Native Import:</strong> Instantly load and process trace files in standard formats (CSV and TIA XML).</li>
+        </ul>
+      </div>
+
+      <div class="panel-3d">
+        <h2>Pop-Out Architecture</h2>
+        <p>A multi-window interface designed for engineers accustomed to multi-monitor setups.</p>
+        <ul>
+          <li><strong>Signal Isolation:</strong> Detach any single variable or group of signals into a completely independent floating window.</li>
+          <li><strong>Advanced Comparison:</strong> Align and overlay dozens of signals to isolate anomalies and quickly identify error patterns in the PLC cycle.</li>
+        </ul>
+      </div>
+
+      <div class="panel-3d">
+        <h2>100% Standalone</h2>
+        <p>Engineered to offer maximum portability. Perfect for critical field interventions.</p>
+        <ul>
+          <li><strong>No External Framework:</strong> Natively written and compiled. No installation or .NET runtime required to operate.</li>
+          <li><strong>Immediate Deploy:</strong> Click and run. Leaves no trace in the system registry and starts in a fraction of a second.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="fixed-download-bar">
+    <a href="https://github.com/leo25122/PlcTraceViewer-site/releases/download/v2.0.0/PlcTraceViewer_Setup_v2.0.exe" class="btn btn-primary" style="font-size: 1.1rem; padding: 18px 48px;">Download v2.0.0</a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

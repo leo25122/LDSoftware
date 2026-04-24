@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forge | Leonardo Dogariu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body class="app-page">
+
+  <div id="canvas-container"></div>
+
+  <nav>
+    <a href="index.html" class="brand">L.D. Software</a>
+    <div class="nav-links">
+      <a href="index.html" class="btn btn-outline">Back to Projects</a>
+    </div>
+  </nav>
+
+  <div class="fixed-app-header">
+    <div class="category-label">Industrial Automation</div>
+    <h1>Forge</h1>
+    <div class="spin-hint">Use the mouse wheel or arrows to rotate</div>
+  </div>
+
+  <div class="carousel-nav">
+    <div class="nav-arrow left-arrow" onclick="rotateCarousel(1)">&#10094;</div>
+    <div class="nav-arrow right-arrow" onclick="rotateCarousel(-1)">&#10095;</div>
+  </div>
+
+  <div class="scene-3d">
+    <div class="carousel-3d">
+      
+      <div class="panel-3d">
+        <h2>Distributed Architecture</h2>
+        <p>Forget isolated Excel sheets. Forge relies on a powerful and scalable client/server architecture designed for the most demanding environments.</p>
+        <ul>
+          <li><strong>Arsenal Server:</strong> Proprietary Forge database on Raspberry Pi (no third-party software) synchronized in real-time via SignalR.</li>
+          <li><strong>MainApp:</strong> High-end desktop client. An ultra-fast interface designed to master your plant's complexity, saving hours of development and eliminating error margins.</li>
+          <li><strong>Team Sync:</strong> Work collaboratively on the same plant with peace of mind. The system coordinates access in real-time, ensuring a seamless workflow and eliminating the risk of data loss.</li>
+        </ul>
+      </div>
+
+      <div class="panel-3d">
+        <h2>Universal Export</h2>
+        <p>Generate the required code directly for your preferred Target. Full support for top-tier industrial ecosystems.</p>
+        <ul>
+          <li><strong>Target PLC:</strong> Native compatibility with Siemens S7-1500, S7-400, and Allen-Bradley ControlLogix.</li>
+          <li><strong>Target HMI:</strong> Immediate generation of tags and structures for WinCC Classic/Unified, Ignition, and iFix.</li>
+          <li><strong>Massive Auto-Generation:</strong> A true arsenal of integrated functions that go well beyond I/O Marshalling, automating the creation of logic, alarms, and entire configurations with a single click.</li>
+        </ul>
+      </div>
+
+      <div class="panel-3d">
+        <h2>Security & Licensing</h2>
+        <p>Enterprise-grade cryptographic protection for maximum intellectual property security.</p>
+        <ul>
+          <li><strong>RSA-4096 & DPAPI:</strong> Advanced authentication and cryptography natively integrated into the Windows environment.</li>
+          <li><strong>Hardware Fingerprint:</strong> 5-point unique fingerprint generation to prevent unauthorized access or copying on automation servers.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="fixed-download-bar">
+    <a href="https://github.com/leo25122/Forge/releases/download/v2.1.0/Forge_Setup_v2.1.0_beta.exe" class="btn btn-primary" style="font-size: 1.1rem; padding: 18px 48px;">Download Forge</a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

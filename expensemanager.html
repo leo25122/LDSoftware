@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Manager | Leonardo Dogariu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body class="app-page">
+
+  <div id="canvas-container"></div>
+
+  <nav>
+    <a href="index.html" class="brand">L.D. Software</a>
+    <div class="nav-links">
+      <a href="index.html" class="btn btn-outline">Back to Projects</a>
+    </div>
+  </nav>
+
+  <div class="fixed-app-header">
+    <div class="category-label">Finance & Tracking</div>
+    <h1>Expense Manager</h1>
+    <div class="spin-hint">Use the mouse wheel or arrows to rotate</div>
+  </div>
+
+  <div class="carousel-nav">
+    <div class="nav-arrow left-arrow" onclick="rotateCarousel(1)">&#10094;</div>
+    <div class="nav-arrow right-arrow" onclick="rotateCarousel(-1)">&#10095;</div>
+  </div>
+
+  <div class="scene-3d">
+    <div class="carousel-3d">
+      
+      <div class="panel-3d">
+        <h2>Cross-Platform Finance Tracking</h2>
+        <p>Built with Flutter for a seamless experience across web, iOS, and Android. Track your expenses effortlessly from any device.</p>
+        <ul>
+          <li><strong>Universal Access:</strong> Write once, run anywhere. The application layout dynamically adapts to mobile and desktop screens.</li>
+          <li><strong>Progressive Web App:</strong> Installable directly from the browser without needing app store approvals.</li>
+        </ul>
+      </div>
+
+      <div class="panel-3d">
+        <h2>Real-Time Cloud Sync</h2>
+        <p>Powered by Firebase, your financial data is instantly synchronized to the cloud.</p>
+        <ul>
+          <li><strong>Zero Data Loss:</strong> Access your budget anywhere, anytime. Changes made on one device instantly reflect everywhere.</li>
+          <li><strong>Secure Authentication:</strong> Industry-standard security ensuring your personal financial data remains private and protected.</li>
+        </ul>
+      </div>
+
+      <div class="panel-3d">
+        <h2>Modern UI/UX</h2>
+        <p>Designed with a beautiful, intuitive interface to make personal finance management a fluid experience.</p>
+        <ul>
+          <li><strong>Material Design:</strong> Leverages modern design paradigms for crisp typography, smooth animations, and logical flows.</li>
+          <li><strong>Instant Analytics:</strong> Visual breakdowns of your spending habits instantly rendered without loading delays.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="fixed-download-bar">
+    <a href="https://expense-manager-1d696.web.app" target="_blank" class="btn btn-primary" style="font-size: 1.1rem; padding: 18px 48px;">Open Web App</a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
